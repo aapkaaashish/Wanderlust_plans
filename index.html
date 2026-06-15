@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium curated travel itineraries and custom travel planning for India and abroad.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com data:;">
+    <title>Wanderlust Plans | Premium Travel Experiences</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Alpine.js for lightweight interactions -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] },
+                    colors: { primary: '#059669', secondary: '#d97706', dark: '#0f172a', light: '#f8fafc' }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .hero-bg { background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; background-attachment: fixed; }
+    </style>
+</head>
+<body class="bg-light text-dark antialiased" x-data="{ mobileMenu: false }">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass border-b border-gray-200/50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="font-serif text-2xl font-bold text-dark tracking-tight">Wanderlust<span class="text-primary">Plans</span></a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="itineraries.html" class="text-gray-600 hover:text-primary font-medium transition">Shop Itineraries</a>
+                    <a href="custom-planning.html" class="text-gray-600 hover:text-primary font-medium transition">Custom Planning</a>
+                    <a href="full-service.html" class="text-gray-600 hover:text-primary font-medium transition">Full Service</a>
+                    <a href="group-tours.html" class="text-gray-600 hover:text-primary font-medium transition">Group Tours</a>
+                    <a href="contact.html" class="bg-primary text-white px-6 py-2.5 rounded-full font-medium hover:bg-emerald-700 transition shadow-lg shadow-emerald-500/30">Contact Us</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button @click="mobileMenu = !mobileMenu" class="md:hidden text-gray-600 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu Dropdown -->
+        <div x-show="mobileMenu" @click.away="mobileMenu = false" x-transition class="md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="itineraries.html" class="block px-3 py-3 text-gray-700 hover:bg-emerald-50 rounded-lg font-medium">Shop Itineraries</a>
+                <a href="custom-planning.html" class="block px-3 py-3 text-gray-700 hover:bg-emerald-50 rounded-lg font-medium">Custom Planning</a>
+                <a href="full-service.html" class="block px-3 py-3 text-gray-700 hover:bg-emerald-50 rounded-lg font-medium">Full Service</a>
+                <a href="group-tours.html" class="block px-3 py-3 text-gray-700 hover:bg-emerald-50 rounded-lg font-medium">Group Tours</a>
+                <a href="contact.html" class="block px-3 py-3 text-primary font-bold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg h-screen flex items-center justify-center text-center px-4 relative">
+        <div class="max-w-4xl mx-auto text-white" data-aos="fade-up" data-aos-duration="1000">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-sm font-medium mb-6 tracking-wide">✈️ Curated Travel for the Modern Explorer</span>
+            <h1 class="font-serif text-5xl md:text-7xl font-bold leading-tight mb-6">Travel Smarter, <br><span class="text-emerald-400 italic">Not Harder.</span></h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">Expertly crafted itineraries for India and abroad. Download a ready-made guide, get a custom plan, or let us book your entire dream vacation.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="itineraries.html" class="bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-emerald-700 transition transform hover:scale-105 shadow-xl shadow-emerald-500/40">Browse Itineraries</a>
+                <a href="custom-planning.html" class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/20 transition">Get a Custom Plan</a>
+            </div>
+            <div class="mt-12 flex justify-center gap-8 text-sm text-gray-300 font-medium">
+                <span class="flex items-center gap-2">🔒 Secure Payments</span>
+                <span class="flex items-center gap-2">✓ Registered Business</span>
+                <span class="flex items-center gap-2">★ 500+ Happy Travelers</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Business Models Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-serif text-4xl font-bold text-dark mb-4">How We Can Help You Travel</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Choose the level of support you need. From DIY digital guides to full-service luxury booking.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Model A -->
+                <div class="group bg-light p-8 rounded-2xl border border-gray-100 hover:border-primary/30 hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-emerald-100 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition">📄</div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Digital Itineraries</h3>
+                    <p class="text-gray-500 text-sm mb-6 leading-relaxed">Download detailed, day-by-day PDF guides with maps, exact budgets, and hidden local gems.</p>                    <a href="itineraries.html" class="text-primary font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">Shop Guides <span>→</span></a>
+                </div>
+                <!-- Model B -->
+                <div class="group bg-light p-8 rounded-2xl border border-gray-100 hover:border-primary/30 hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-secondary group-hover:text-white transition">🗺️</div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Custom Planning</h3>
+                    <p class="text-gray-500 text-sm mb-6 leading-relaxed">Tell us your budget and dates. We tailor our base itineraries perfectly to your family's needs.</p>
+                    <a href="custom-planning.html" class="text-secondary font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">Book Consultation <span>→</span></a>
+                </div>
+                <!-- Model C -->
+                <div class="group bg-light p-8 rounded-2xl border border-gray-100 hover:border-primary/30 hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition">✈️</div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Full-Service Booking</h3>
+                    <p class="text-gray-500 text-sm mb-6 leading-relaxed">We handle flights, hotels, visas, and local transport. You just pack your bags and show up.</p>
+                    <a href="full-service.html" class="text-blue-600 font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">Request a Quote <span>→</span></a>
+                </div>
+                <!-- Model D -->
+                <div class="group bg-light p-8 rounded-2xl border border-gray-100 hover:border-primary/30 hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-600 group-hover:text-white transition">👥</div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Curated Group Tours</h3>
+                    <p class="text-gray-500 text-sm mb-6 leading-relaxed">Join small, like-minded groups on our pre-planned adventures with expert local guides.</p>
+                    <a href="group-tours.html" class="text-purple-600 font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">View Upcoming Trips <span>→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="md:col-span-2">
+                    <a href="index.html" class="font-serif text-2xl font-bold tracking-tight mb-4 block">Wanderlust<span class="text-primary">Plans</span></a>
+                    <p class="text-gray-400 max-w-sm leading-relaxed">Crafting unforgettable, stress-free travel experiences for explorers across India and the globe. Registered and secure.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="itineraries.html" class="hover:text-primary transition">Shop Itineraries</a></li>
+                        <li><a href="custom-planning.html" class="hover:text-primary transition">Custom Planning</a></li>
+                        <li><a href="full-service.html" class="hover:text-primary transition">Full Service</a></li>
+                        <li><a href="group-tours.html" class="hover:text-primary transition">Group Tours</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Legal & Contact</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Terms of Service</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition">Contact Us</a></li>                        <li class="pt-2 text-sm text-gray-500">hello@wanderlustplans.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 Wanderlust Plans. All rights reserved. Registered Entity: [Your Business Name].</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ once: true, offset: 50 }); </script>
+</body>
+                                                                                                                                                                                             </html>
