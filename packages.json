@@ -2,93 +2,614 @@
   "travelPackages": [
     {
       "id": 1,
-      "title": "Parvati Valley Explorer",
-      "subtitle": "Rivers • Cafés • Treks • Mountains • Soul",
-      "tagline": "The Perfect Escape into Nature",
-      "duration": { "days": 6, "nights": 5 },
-      "region": "INDIA",
-      "state": "Himachal Pradesh",
-      "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80",
-      "perfectFor": ["Backpackers", "Couples", "Solo Travelers", "Café Lovers", "Nature Seekers"],
-      "bestTimeToVisit": { "primary": "March - June", "secondary": "September - November" },
-      "price": 499,
-      "currency": "₹",
-      "highlights": ["Trek to Kheerganga", "Hot water springs", "Café hopping in Kasol", "Manikaran Sahib visit"]
-    },
-    {
-      "id": 2,
       "title": "Nilgiri Mountains Explorer",
       "subtitle": "Tea Gardens • Waterfalls • Hill Stations • Wildlife",
       "tagline": "Where the Blue Mountains Meet the Sky",
-      "duration": { "days": 6, "nights": 5 },
+      "duration": {
+        "days": 6,
+        "nights": 5
+      },
       "region": "INDIA",
       "state": "Tamil Nadu",
-      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80",
-      "perfectFor": ["Nature Lovers", "Couples", "Photography Enthusiasts", "Tea Estate Tours"],
-      "bestTimeToVisit": { "primary": "March - June", "secondary": "September - November" },
-      "price": 599,
-      "currency": "₹",
-      "highlights": ["Toy train ride (UNESCO)", "Tea estate tours", "Wildlife safari", "Avalanche Valley trek"]
+      "perfectFor": [
+        "Nature Lovers",
+        "Couples",
+        "Photography Enthusiasts",
+        "Tea Estate Tours",
+        "Adventure Seekers"
+      ],
+      "bestTimeToVisit": {
+        "primary": "March - June",
+        "secondary": "September - November"
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Ooty",
+          "activities": [
+            "Check-in to heritage homestay",
+            "Explore Ooty Lake & Botanical Gardens",
+            "Ride the toy train (UNESCO World Heritage)",
+            "Evening at Charring Cross market",
+            "Sunset at Doddabetta Peak"
+          ],
+          "mustVisit": [
+            "Earl's Law Tea House",
+            "Shinkows Chinese Restaurant",
+            "Hotel Ganesh"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Coonoor Discovery",
+          "activities": [
+            "Drive to Coonoor (45 mins from Ooty)",
+            "Visit Sim's Park & Dolphin's Nose",
+            "Explore tea estates & factories",
+            "Wine tasting at local vineyard",
+            "Overnight in Coonoor"          ],
+          "mustVisit": [
+            "Tea Valley Restaurant",
+            "1847 Restaurant",
+            "Harvest Cafe"
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Pykara & Mudumalai",
+          "activities": [
+            "Visit Pykara Waterfalls & Lake",
+            "Wildlife safari at Mudumalai National Park",
+            "Spot elephants, deer & exotic birds",
+            "Tribal village visit",
+            "Return to Ooty"
+          ],
+          "tip": "Carry binoculars for wildlife spotting. Safari timings: 6-9 AM & 2-5 PM"
+        },
+        {
+          "day": 4,
+          "title": "Avalanche Valley Trek",
+          "activities": [
+            "Early morning trek to Avalanche Valley",
+            "Horse riding through meadows",
+            "Picnic by the lake",
+            "Visit Rose Garden (largest in India)",
+            "Evening bonfire"
+          ],
+          "tip": "Permit required for Avalanche. Start by 7 AM. Carry warm clothes."
+        },
+        {
+          "day": 5,
+          "title": "Mysore Border Exploration",
+          "activities": [
+            "Drive to Bandipur Wildlife Sanctuary",
+            "Jungle safari experience",
+            "Visit Himavad Gopalaswamy Betta temple",
+            "Scenic drive through forests",
+            "Return to Ooty"
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Departure",
+          "activities": [
+            "Last-minute shopping at Commercial Road",
+            "Buy tea, spices & homemade chocolates",
+            "Visit local tribal museum",
+            "Check-out with memories"          ]
+        }
+      ],
+      "budget": {
+        "backpacker": "₹10,000 - 15,000",
+        "comfortable": "₹20,000 - 30,000",
+        "luxury": "₹40,000+"
+      },
+      "howToReach": {
+        "nearestAirport": "Coimbatore (88 km)",
+        "nearestRailway": "Mettupalayam (40 km) / Ooty Toy Train",
+        "byRoad": "Volvo bus from Bangalore/Chennai/Coimbatore"
+      },
+      "packingEssentials": [
+        "Warm clothes (even in summer)",
+        "Comfortable trekking shoes",
+        "Rain jacket/umbrella",
+        "Sunglasses & sunscreen",
+        "Camera with extra batteries",
+        "Basic medicines",
+        "Power bank"
+      ],
+      "travelTips": [
+        "Book toy train tickets in advance (IRCTC)",
+        "Ooty is eco-sensitive - avoid plastic",
+        "Mobile network can be patchy in valleys",
+        "Try local Nilgiri tea & homemade chocolates",
+        "Respect tribal communities & their land",
+        "Carry cash - ATMs limited in remote areas"
+      ],
+      "price": "₹599",
+      "quote": "The Nilgiris aren't just hills, they're a feeling of peace."
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "Varanasi Spiritual Journey",
       "subtitle": "Ancient Ghats • Temples • Ganga Aarti • Spirituality",
       "tagline": "Where Time Stands Still & Souls Find Peace",
-      "duration": { "days": 5, "nights": 4 },
+      "duration": {
+        "days": 5,
+        "nights": 4
+      },
       "region": "INDIA",
       "state": "Uttar Pradesh",
-      "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80",
-      "perfectFor": ["Spiritual Seekers", "Photography Lovers", "History Buffs", "Solo Travelers"],
-      "bestTimeToVisit": { "primary": "October - March", "secondary": "Avoid summer" },
-      "price": 499,
-      "currency": "₹",
-      "highlights": ["Sunrise boat ride", "Kashi Vishwanath Temple", "Ganga Aarti", "Sarnath Buddhist circuit"]
+      "perfectFor": [
+        "Spiritual Seekers",
+        "Photography Lovers",
+        "History Buffs",
+        "Solo Travelers",
+        "Cultural Explorers"      ],
+      "bestTimeToVisit": {
+        "primary": "October - March",
+        "secondary": "Avoid April-June (extreme heat)"
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival & First Glimpse",
+          "activities": [
+            "Check-in to heritage haveli near ghats",
+            "Evening walk along Dashashwamedh Ghat",
+            "Witness spectacular Ganga Aarti",
+            "Traditional vegetarian thali dinner",
+            "Night boat ride (optional)"
+          ],
+          "mustVisit": [
+            "Keshari Cafe",
+            "Brown Bread Bakery",
+            "Pizzeria Vaatika Cafe"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Sunrise & Ancient Temples",
+          "activities": [
+            "4:30 AM sunrise boat ride on Ganges",
+            "Visit Kashi Vishwanath Temple (Golden Temple)",
+            "Explore narrow lanes of old city",
+            "Visit Sankat Mochan Hanuman Temple",
+            "Lunch at local eatery"
+          ],
+          "tip": "Dress modestly for temples. Remove shoes. No phones in main temple."
+        },
+        {
+          "day": 3,
+          "title": "Sarnath Buddhist Circuit",
+          "activities": [
+            "Day trip to Sarnath (10 km)",
+            "Visit Dhamek Stupa (where Buddha gave first sermon)",
+            "Explore archaeological museum",
+            "Thai & Tibetan temples",
+            "Return to Varanasi"
+          ],
+          "mustVisit": [
+            "Tibetan Kitchen",
+            "Bharat Milap Temple area snacks"
+          ]
+        },
+        {          "day": 4,
+          "title": "Ghats & Culture",
+          "activities": [
+            "Morning walk through 84 ghats",
+            "Visit Manikarnika Ghat (cremation ghat)",
+            "Attend morning Ganga Aarti",
+            "Silk saree shopping in Chowk",
+            "Classical music performance (evening)",
+            "Farewell dinner by the river"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Departure",
+          "activities": [
+            "Last boat ride & photography",
+            "Buy Banarasi silk & souvenirs",
+            "Visit Bharat Kala Bhavan museum",
+            "Check-out with blessings"
+          ]
+        }
+      ],
+      "budget": {
+        "backpacker": "₹6,000 - 10,000",
+        "comfortable": "₹15,000 - 25,000",
+        "luxury": "₹35,000+"
+      },
+      "howToReach": {
+        "nearestAirport": "Lal Bahadur Shastri Airport (25 km)",
+        "nearestRailway": "Varanasi Junction (BSB) - well connected",
+        "byRoad": "Volvo buses from Delhi, Lucknow, Patna"
+      },
+      "packingEssentials": [
+        "Modest clothing (covered shoulders & knees)",
+        "Comfortable walking shoes",
+        "Scarf/stole for temples",
+        "Water bottle",
+        "Camera (no phones in main temple)",
+        "Hand sanitizer",
+        "Small torch for early morning"
+      ],
+      "travelTips": [
+        "Beware of touts & fake guides",
+        "Negotiate boat prices beforehand",
+        "Try street food but choose clean stalls",
+        "Early morning (5-7 AM) is best for photography",
+        "Respect religious sentiments",
+        "Carry small change for offerings",
+        "Avoid non-veg & alcohol (holy city)"
+      ],      "price": "₹499",
+      "quote": "Varanasi is not a city, it's an emotion that stays with you forever."
     },
     {
-      "id": 4,
+      "id": 3,
       "title": "Bodh Gaya Peace Trail",
       "subtitle": "Buddhist Temples • Meditation • Enlightenment • Heritage",
       "tagline": "Walk the Path of Buddha's Enlightenment",
-      "duration": { "days": 4, "nights": 3 },
+      "duration": {
+        "days": 4,
+        "nights": 3
+      },
       "region": "INDIA",
       "state": "Bihar",
-      "image": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?auto=format&fit=crop&w=800&q=80",
-      "perfectFor": ["Spiritual Seekers", "Buddhist Pilgrims", "Meditation Practitioners", "History Enthusiasts"],
-      "bestTimeToVisit": { "primary": "November - February", "secondary": "March - June" },
-      "price": 399,
-      "currency": "₹",
-      "highlights": ["Mahabodhi Temple", "Meditation under Bodhi Tree", "International temples", "Nalanda ruins"]
+      "perfectFor": [
+        "Spiritual Seekers",
+        "Buddhist Pilgrims",
+        "Meditation Practitioners",
+        "History Enthusiasts",
+        "Peace Seekers"
+      ],
+      "bestTimeToVisit": {
+        "primary": "November - February",
+        "secondary": "March - June (hot but manageable)"
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival & Mahabodhi Temple",
+          "activities": [
+            "Check-in to monastery guesthouse",
+            "Visit Mahabodhi Temple (UNESCO Site)",
+            "Meditation under Bodhi Tree",
+            "Evening chanting ceremony",
+            "Simple vegetarian dinner"
+          ],
+          "mustVisit": [
+            "Tibetan Market cafes",
+            "Monastery canteens",
+            "Local thali restaurants"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "International Temples",
+          "activities": [
+            "Thai Monastery (golden architecture)",
+            "Japanese Temple (peaceful gardens)",
+            "Chinese Temple (colorful pagodas)",
+            "Bhutanese Monastery",            "Meditation session at any temple"
+          ],
+          "tip": "Each temple has unique architecture & meditation timings"
+        },
+        {
+          "day": 3,
+          "title": "Buddhist Circuit Day Trip",
+          "activities": [
+            "Visit Rajgir (ancient capital)",
+            "Gridhakuta Hill (Buddha's preaching site)",
+            "Nalanda University ruins (world's oldest)",
+            "Pawapuri (Jain pilgrimage)",
+            "Return to Bodh Gaya"
+          ],
+          "mustVisit": [
+            "Local Bihar thali",
+            "Litti Chokha (traditional dish)"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Meditation & Departure",
+          "activities": [
+            "Early morning meditation",
+            "Visit Great Buddha Statue (80 ft)",
+            "Dungeshwari Hills (where Buddha practiced)",
+            "Buy Buddhist souvenirs & books",
+            "Depart with peace"
+          ]
+        }
+      ],
+      "budget": {
+        "backpacker": "₹5,000 - 8,000",
+        "comfortable": "₹12,000 - 18,000",
+        "luxury": "₹25,000+"
+      },
+      "howToReach": {
+        "nearestAirport": "Gaya Airport (12 km) / Patna (115 km)",
+        "nearestRailway": "Gaya Junction (16 km)",
+        "byRoad": "Buses from Patna, Kolkata, Ranchi"
+      },
+      "packingEssentials": [
+        "Modest clothing (shoulders & knees covered)",
+        "Comfortable walking shoes",
+        "Meditation cushion (optional)",
+        "Sun protection",
+        "Water bottle",
+        "Notebook for reflections",
+        "Small backpack for day trips"
+      ],      "travelTips": [
+        "Mahabodhi Temple opens 5 AM - 9 PM",
+        "Free entry but photography needs permit",
+        "Monasteries offer free/cheap accommodation",
+        "Maintain silence in meditation halls",
+        "Try Tibetan momos & thukpa",
+        "December has Kalachakra festival (crowded)",
+        "Hire local guide for history (₹300-500)"
+      ],
+      "price": "₹399",
+      "quote": "In Bodh Gaya, you don't just learn about peace, you experience it."
     },
     {
-      "id": 5,
+      "id": 4,
       "title": "Rann of Kutch Cultural Experience",
       "subtitle": "White Desert • Full Moon • Handicrafts • Folk Culture",
       "tagline": "Where the Earth Meets the Sky in White",
-      "duration": { "days": 5, "nights": 4 },
+      "duration": {
+        "days": 5,
+        "nights": 4
+      },
       "region": "INDIA",
       "state": "Gujarat",
-      "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=800&q=80",
-      "perfectFor": ["Photography Lovers", "Culture Enthusiasts", "Festival Goers", "Adventure Seekers"],
-      "bestTimeToVisit": { "primary": "November - February", "secondary": "Rann Utsav season" },
-      "price": 699,
-      "currency": "₹",
-      "highlights": ["Great Rann full moon", "Tent city stay", "Craft village tours", "Camel safari"]
+      "perfectFor": [
+        "Photography Lovers",
+        "Culture Enthusiasts",
+        "Festival Goers",
+        "Adventure Seekers",
+        "Handicraft Collectors"
+      ],
+      "bestTimeToVisit": {
+        "primary": "November - February (Rann Utsav)",
+        "secondary": "Avoid monsoon (June-Sept)"
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Bhuj",
+          "activities": [
+            "Check-in to heritage hotel",
+            "Visit Prag Mahal & Aina Mahal",
+            "Explore Bhujodi village (weaving)",
+            "Traditional Gujarati thali dinner",
+            "Overnight in Bhuj"
+          ],
+          "mustVisit": [
+            "Lala's Cafe",
+            "Kutchi Dabeli stalls",
+            "Jain restaurant"
+          ]        },
+        {
+          "day": 2,
+          "title": "Great Rann & Dhordo",
+          "activities": [
+            "Drive to Dhordo (75 km)",
+            "Check-in to tent city (Rann Utsav)",
+            "Camel ride on white salt desert",
+            "Sunset at Great Rann viewpoint",
+            "Cultural program & folk dances",
+            "Full moon night experience (if timing matches)"
+          ],
+          "tip": "Full moon nights are magical - book in advance!"
+        },
+        {
+          "day": 3,
+          "title": "Village Crafts Trail",
+          "activities": [
+            "Visit Nirona village (bell metal craft)",
+            "Ajrak block printing demonstration",
+            "Bandhani tie-dye workshop",
+            "Meet local artisans",
+            "Shop directly from craftsmen",
+            "Return to tent city"
+          ],
+          "mustVisit": [
+            "Tent city restaurant",
+            "Traditional Kutchi dinner"
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Kala Dungar & Black Hills",
+          "activities": [
+            "Drive to Kala Dungar (Black Hill)",
+            "Visit Dattatreya Temple",
+            "Panoramic view of Rann from top",
+            "Stop at Bhirandiyara village",
+            "Wildlife spotting (wild asses)",
+            "Return to Bhuj"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Departure",
+          "activities": [
+            "Last-minute shopping at Bhuj market",
+            "Buy handicrafts, textiles, silver jewelry",
+            "Visit Swaminarayan Temple",
+            "Check-out with memories"          ]
+        }
+      ],
+      "budget": {
+        "backpacker": "₹8,000 - 12,000",
+        "comfortable": "₹20,000 - 30,000",
+        "luxury": "₹45,000+ (tent city packages)"
+      },
+      "howToReach": {
+        "nearestAirport": "Bhuj Airport (well connected to Mumbai/Delhi)",
+        "nearestRailway": "Bhuj Railway Station",
+        "byRoad": "Volvo from Ahmedabad (8-9 hours)"
+      },
+      "packingEssentials": [
+        "Light cotton clothes (days are hot)",
+        "Warm jacket (desert nights are cold)",
+        "Sunglasses & hat",
+        "Sunscreen SPF 50+",
+        "Scarf for dust protection",
+        "Camera with extra memory cards",
+        "Comfortable walking shoes"
+      ],
+      "travelTips": [
+        "Rann Utsav runs Nov-Feb (book 3 months early)",
+        "Full moon dates sell out fastest",
+        "Carry cash - limited ATMs in villages",
+        "Try Kutchi dabeli, khichdi, mawa",
+        "Bargain politely at craft villages",
+        "Respect local customs (conservative region)",
+        "Permit required for Rann (check at entry)"
+      ],
+      "price": "₹699",
+      "quote": "The white desert of Kutch is not just a place, it's a canvas of nature's artistry."
     },
     {
-      "id": 6,
+      "id": 5,
       "title": "Statue of Unity & Gujarat Heritage",
       "subtitle": "World's Tallest Statue • Dams • Tribal Culture • Nature",
       "tagline": "Witness India's Modern Marvel & Natural Beauty",
-      "duration": { "days": 5, "nights": 4 },
+      "duration": {
+        "days": 5,
+        "nights": 4
+      },
       "region": "INDIA",
       "state": "Gujarat",
-      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
-      "perfectFor": ["History Lovers", "Architecture Enthusiasts", "Families", "Nature Seekers"],
-      "bestTimeToVisit": { "primary": "October - March", "secondary": "Avoid summer" },
-      "price": 549,
-      "currency": "₹",
-      "highlights": ["Statue viewing gallery", "Sardar Sarovar Dam", "Jungle safari", "Pavagadh temple"]
+      "perfectFor": [
+        "History Lovers",
+        "Architecture Enthusiasts",
+        "Families",
+        "Nature Seekers",        "Photography Lovers"
+      ],
+      "bestTimeToVisit": {
+        "primary": "October - March",
+        "secondary": "Avoid summer (April-June very hot)"
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival & Vadodara",
+          "activities": [
+            "Arrive in Vadodara (Baroda)",
+            "Visit Laxmi Vilas Palace",
+            "Explore Sayaji Baig Garden",
+            "Maharaja Fateh Singh Museum",
+            "Overnight in Vadodara"
+          ],
+          "mustVisit": [
+            "Makarpura Palace cafe",
+            "Elaborate Gujarati thali",
+            "Street food at Mandvi"
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Statue of Unity",
+          "activities": [
+            "Drive to Kevadia (90 km)",
+            "Visit Statue of Unity (182m tall)",
+            "Viewing gallery at 153m height",
+            "Sardar Sarovar Dam viewpoint",
+            "Laser show in evening",
+            "Check-in to resort"
+          ],
+          "tip": "Book tickets online in advance. Security check takes time."
+        },
+        {
+          "day": 3,
+          "title": "Nature & Wildlife",
+          "activities": [
+            "Visit Butterfly Garden",
+            "Cactus Garden exploration",
+            "Jungle Safari (see sloth bears, leopards)",
+            "Zarwani Waterfall (seasonal)",
+            "Tribal museum & cultural center",
+            "Evening at eco-tourism site"
+          ],
+          "mustVisit": [
+            "Resort restaurant",
+            "Local tribal cuisine"          ]
+        },
+        {
+          "day": 4,
+          "title": "Pavagadh & Chamunda Mata",
+          "activities": [
+            "Drive to Pavagadh (60 km)",
+            "Cable car to Chamunda Mata Temple",
+            "Explore ancient Kalika Mata Temple",
+            "Visit Pavagadh Fort ruins",
+            "Return via Vadodara",
+            "Farewell dinner"
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Departure",
+          "activities": [
+            "Visit Kirti Mandir (Mahatma Gandhi's birthplace)",
+            "Shopping for Gujarati handicrafts",
+            "Buy khadi, textiles, snacks",
+            "Check-out & departure"
+          ]
+        }
+      ],
+      "budget": {
+        "backpacker": "₹7,000 - 12,000",
+        "comfortable": "₹18,000 - 25,000",
+        "luxury": "₹35,000+"
+      },
+      "howToReach": {
+        "nearestAirport": "Vadodara Airport (90 km to Statue)",
+        "nearestRailway": "Vadodara Junction (well connected)",
+        "byRoad": "Excellent highways from Ahmedabad, Mumbai, Surat"
+      },
+      "packingEssentials": [
+        "Light cotton clothes",
+        "Comfortable walking shoes",
+        "Sun protection (hat, sunglasses, sunscreen)",
+        "Water bottle",
+        "Camera",
+        "Power bank",
+        "Light jacket for AC places"
+      ],
+      "travelTips": [
+        "Statue closed on Mondays",
+        "Book viewing gallery tickets online",
+        "Security check strict - carry ID proof",
+        "Try Gujarati thali, dhokla, fafda-jalebi",
+        "Combine with Rann of Kutch for longer trip",        "Best photography: early morning & sunset",
+        "Wear comfortable shoes - lots of walking"
+      ],
+      "price": "₹549",
+      "quote": "The Statue of Unity stands not just as a monument, but as India's spirit made concrete."
     }
-  ]
+  ],
+  "metadata": {
+    "totalPackages": 5,
+    "regions": [
+      "Tamil Nadu",
+      "Uttar Pradesh",
+      "Bihar",
+      "Gujarat"
+    ],
+    "priceRange": "₹399 - ₹699",
+    "targetAudience": [
+      "Domestic travelers",
+      "International tourists",
+      "Solo travelers",
+      "Families",
+      "Spiritual seekers",
+      "Adventure enthusiasts"
+    ],
+    "lastUpdated": "2026-06-15"
+  }
 }
