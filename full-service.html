@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Service Travel Booking | Wanderlust Plans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] }, colors: { primary: '#059669', dark: '#0f172a', light: '#f8fafc' } } } }
+    </script>
+</head>
+<body class="bg-light text-dark antialiased">
+    <nav class="bg-white border-b border-gray-200 py-4">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="font-serif text-2xl font-bold text-dark">Wanderlust<span class="text-primary">Plans</span></a>
+            <a href="index.html" class="text-gray-600 hover:text-primary font-medium">← Back to Home</a>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h1 class="font-serif text-4xl font-bold mb-4">Full-Service Travel Booking</h1>
+            <p class="text-gray-500">We handle the logistics. You handle the memories. Fill out the form below, and we will send a secure, no-obligation quote within 24 hours.</p>
+        </div>
+
+        <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-gray-100">
+            <!-- IMPORTANT: Replace 'YOUR_FORMSPREE_ID' with your actual Formspree or Tally.so endpoint -->
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name</label>
+                        <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                        <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Destination</label>
+                        <input type="text" name="destination" placeholder="e.g., Bali, Switzerland, Kerala" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Approximate Budget (per person)</label>
+                        <select name="budget" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition">
+                            <option>Budget (₹30k - ₹50k / $500 - $800)</option>
+                            <option>Mid-Range (₹50k - ₹1L / $800 - $1500)</option>
+                            <option>Luxury (₹1L+ / $1500+)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Travel Dates</label>
+                        <input type="text" name="dates" placeholder="e.g., 10th - 15th December 2026" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Number of Travelers</label>
+                        <input type="number" name="travelers" min="1" value="2" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Special Requests (Visa, Dietary, Accessibility)</label>
+                    <textarea name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition"></textarea>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <input type="checkbox" required class="mt-1 w-5 h-5 text-primary rounded border-gray-300 focus:ring-primary">
+                    <p class="text-sm text-gray-500">I agree to the <a href="#" class="text-primary underline">Privacy Policy</a>. I understand this is an inquiry and no payment will be taken until a formal quote is approved.</p>
+                </div>
+
+                <button type="submit" class="w-full bg-primary text-white font-bold text-lg py-4 rounded-xl hover:bg-emerald-700 transition shadow-lg shadow-emerald-500/30">Request Free Quote</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
