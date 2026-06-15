@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Itineraries | Wanderlust Plans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] }, colors: { primary: '#059669', secondary: '#d97706', dark: '#0f172a', light: '#f8fafc' } } } }
+    </script>
+    <style>.glass { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); }</style>
+</head>
+<body class="bg-light text-dark antialiased" x-data="{ mobileMenu: false }">
+
+    <!-- Reuse Navbar from index.html (simplified for brevity, copy full nav in production) -->
+    <nav class="fixed w-full z-50 glass border-b border-gray-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="index.html" class="font-serif text-2xl font-bold text-dark">Wanderlust<span class="text-primary">Plans</span></a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-primary font-medium">Home</a>
+                <a href="itineraries.html" class="text-primary font-bold">Shop Itineraries</a>
+                <a href="custom-planning.html" class="text-gray-600 hover:text-primary font-medium">Custom Planning</a>
+                <a href="contact.html" class="bg-primary text-white px-6 py-2.5 rounded-full font-medium hover:bg-emerald-700 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-16 bg-dark text-white text-center px-4">
+        <h1 class="font-serif text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Premium Digital Itineraries</h1>
+        <p class="text-gray-400 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">Instantly downloadable PDF guides. Includes day-by-day plans, Google Maps links, budget breakdowns, and local hacks.</p>
+    </header>
+
+    <!-- Itineraries Grid -->
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Itinerary 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group" data-aos="fade-up">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Kerala">
+                    <span class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">INDIA</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-serif text-xl font-bold">7-Day Magical Kerala</h3>
+                        <span class="text-primary font-bold text-lg">₹499</span>                    </div>
+                    <p class="text-gray-500 text-sm mb-4">Munnar tea gardens, Alleppey houseboats, and Fort Kochi. Includes budget & luxury options.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center gap-2">✓ Detailed Google Map included</li>
+                        <li class="flex items-center gap-2">✓ Hidden cafe & restaurant list</li>
+                    </ul>
+                    <!-- Replace '#' with your Gumroad/Razorpay Payment Link -->
+                    <a href="#" class="block w-full text-center bg-dark text-white py-3 rounded-xl font-semibold hover:bg-primary transition">Buy Now (Instant Download)</a>
+                </div>
+            </div>
+
+            <!-- Itinerary 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Tokyo">
+                    <span class="absolute top-4 left-4 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full">ABROAD</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-serif text-xl font-bold">5-Day Tokyo & Kyoto Express</h3>
+                        <span class="text-primary font-bold text-lg">$15 / ₹999</span>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-4">The ultimate first-timer Japan guide. JR Pass tips, sushi spots, and temple etiquette.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center gap-2">✓ Public transport navigation guide</li>
+                        <li class="flex items-center gap-2">✓ Pocket Wi-Fi & SIM card tips</li>
+                    </ul>
+                    <a href="#" class="block w-full text-center bg-dark text-white py-3 rounded-xl font-semibold hover:bg-primary transition">Buy Now (Instant Download)</a>
+                </div>
+            </div>
+
+            <!-- Itinerary 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+                <div class="relative h-56 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Swiss Alps">
+                    <span class="absolute top-4 left-4 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full">ABROAD</span>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-serif text-xl font-bold">10-Day Swiss Alps Adventure</h3>
+                        <span class="text-primary font-bold text-lg">$20 / ₹1499</span>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-4">Zurich, Lucerne, Interlaken, and Zermatt. Scenic train routes and budget hostel to luxury chalet options.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center gap-2">✓ Swiss Travel Pass optimization</li>
+                        <li class="flex items-center gap-2">✓ Best photography viewpoints</li>
+                    </ul>
+                    <a href="#" class="block w-full text-center bg-dark text-white py-3 rounded-xl font-semibold hover:bg-primary transition">Buy Now (Instant Download)</a>
+                </div>
+            </div>
+            <!-- Add Itineraries 4-7 here following the same structure (Dubai, Ladakh, Bali, Rajasthan) -->
+            <!-- For brevity, showing a placeholder for the rest -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group md:col-span-2 lg:col-span-3 text-center p-12 border-2 border-dashed border-gray-300" data-aos="fade-up">
+                <p class="text-gray-500 font-medium">+ 4 More Premium Itineraries (Dubai, Ladakh, Bali, Rajasthan) available in the full shop.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer (Same as index) -->
+    <footer class="bg-dark text-white py-10 text-center text-sm text-gray-500">
+        <p>&copy; 2026 Wanderlust Plans. Secure payments powered by Razorpay/Stripe.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ once: true }); </script>
+</body>
+</html>
