@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Travel Planning | Wanderlust Plans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] }, colors: { primary: '#059669', secondary: '#d97706', dark: '#0f172a', light: '#f8fafc' } } } }
+    </script>
+</head>
+<body class="bg-light text-dark antialiased">
+    <nav class="bg-white border-b border-gray-200 py-4">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="font-serif text-2xl font-bold text-dark">Wanderlust<span class="text-primary">Plans</span></a>
+            <a href="index.html" class="text-gray-600 hover:text-primary font-medium">← Back to Home</a>
+        </div>
+    </nav>
+
+    <header class="py-20 bg-emerald-50 text-center px-4">
+        <h1 class="font-serif text-4xl md:text-5xl font-bold mb-4 text-dark" data-aos="fade-up">Custom Travel Planning</h1>
+        <p class="text-gray-600 max-w-2xl mx-auto text-lg" data-aos="fade-up" data-aos-delay="100">Don't want to plan it yourself? Tell us your dreams, budget, and travel style. We'll build a personalized, day-by-day itinerary just for you.</p>
+    </header>
+
+    <section class="py-16 max-w-5xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h2 class="font-serif text-3xl font-bold mb-6">How It Works</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Book a Discovery Call</h4>
+                            <p class="text-gray-500 text-sm">A free 15-minute chat to understand your travel style, dates, and budget.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Pay the Planning Fee</h4>
+                            <p class="text-gray-500 text-sm">A one-time fee of ₹2,999 (India) or $50 (Abroad) to begin detailed research.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Receive Your Custom Guide</h4>
+                            <p class="text-gray-500 text-sm">Within 5 days, get a beautiful PDF with booking links, maps, and a detailed schedule.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Replace with your actual Calendly Link -->
+                <a href="https://calendly.com" target="_blank" class="mt-8 inline-block bg-secondary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-amber-600 transition shadow-lg shadow-amber-500/30">Book Free Discovery Call</a>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100" data-aos="fade-left">
+                <h3 class="font-serif text-2xl font-bold mb-4">What's Included?</h3>
+                <ul class="space-y-3 text-gray-600">
+                    <li class="flex items-center gap-3">✅ Custom day-by-day schedule</li>
+                    <li class="flex items-center gap-3">✅ Interactive Google Map with all pins</li>
+                    <li class="flex items-center gap-3">✅ 3 Hotel options per night (Budget, Mid, Luxury)</li>
+                    <li class="flex items-center gap-3">✅ Local transport & visa guidance</li>
+                    <li class="flex items-center gap-3">✅ 1 round of revisions included</li>
+                </ul>
+                <div class="mt-6 pt-6 border-t border-gray-100">
+                    <p class="text-sm text-gray-500 mb-2">Starting at</p>
+                    <p class="text-4xl font-bold text-primary">₹2,999 <span class="text-lg text-gray-400 font-normal">/ trip</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ once: true }); </script>
+</body>
+</html>
